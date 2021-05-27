@@ -24,9 +24,13 @@
 
         while($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)){
 
-            echo '<a href="#" class="list-group-item"';
-              echo '<p><font style="font-weight: bolder">'.$registro['usuario'].' </font> <small>'.$registro['email'].'</small><p>';
-            echo '</a>';
+            echo '<div href="#" class="list-group-item centraliz"> ';
+                echo '<p class="texto">'.$registro['usuario'].'<span> - '.$registro['email'].'</span></p>';
+                echo '<p  class="list-group-item-text pull-right">';
+                    echo '<button type="button" class="btn btn-default btn_seguir" data-id_usuario="'.$registro['id'].'">Seguir</button>';
+                    echo '<button type="button" class="btn btn-primary btn_deixar_seguir" data-id_usuario="'.$registro['id'].'">Deixar de Seguir</button>';
+                echo '</p>';
+            echo '</div>';
         }
     }else{
         echo 'Erro na consulta das pessoas!';
