@@ -64,6 +64,9 @@
     //exercutar a query
     if(mysqli_query($link, $sql)){
         echo'Usuário registrado com sucesso!';
+        
+        header('Location: index.php?erro=1');
+        
     }else{
         echo 'Erro ao registrar usuário!';
     }
