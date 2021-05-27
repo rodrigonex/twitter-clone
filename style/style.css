@@ -1,3 +1,14 @@
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    margin-top: 2rem;
+    padding-right: 25rem;
+}
+
 .centraliz{
     display: flex;
     justify-content: space-between;
@@ -15,3 +26,31 @@
     margin-left: 0.5rem;
 }
 
+.containerflex{
+    display: flex;
+    justify-content: center;
+}
+
+.containerflex h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 3rem 0 2rem 0;
+}
+
+.containerflex .form-group{
+    width: 30rem; 
+    margin-bottom: 2.5rem;    
+}
+
+.form-group input{
+    height: 5rem;
+}
+
+.containerflex button{
+    height: 5rem; 
+    border-radius: 3rem;   
+}
+
+.outros{
+    margin: 2rem 0;
+}
